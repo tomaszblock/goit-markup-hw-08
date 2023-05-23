@@ -1,0 +1,15 @@
+.ourteam {
+  background-color: $buttons-color;
+  &__items {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__post {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}

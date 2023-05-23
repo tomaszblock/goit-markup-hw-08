@@ -1,0 +1,26 @@
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  &__position {
+    display: flex;
+    padding: 12px 12px;
+    fill: $icons-primary-color;
+    max-height: 44px;
+    transition-timing-function: $transit-function-primary;
+    transition-property: background-color, fill;
+    border-radius: 50%;
+    transition-duration: $transit-duration-primary;
+    &:hover,
+    &:focus {
+      display: flex;
+      background-color: $special-color-primary;
+      border-radius: 50%;
+      fill: $color-white;
+    }
+    &--joinus {
+      fill: $color-white;
+      background-color: $bg-footer-icons-color;
+    }
+  }
+}

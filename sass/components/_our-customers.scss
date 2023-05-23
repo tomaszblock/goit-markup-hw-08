@@ -1,0 +1,13 @@
+.our-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  flex-direction: column;
+  &__post {
+    flex-direction: column;
+    gap: 50px;
+  }
+  &__items {
+    display: flex;
+    gap: 30px;
+  }
+}

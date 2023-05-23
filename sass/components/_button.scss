@@ -1,0 +1,63 @@
+.button {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: $font-weight-l;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $color-white;
+  background-color: $special-color-primary;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-timing-function: $transit-function-primary;
+  transition-property: color, box-shadow, fill;
+  transition-duration: $transit-duration-primary;
+  fill: $color-white;
+  &:hover,
+  &:focus {
+    color: $special-color-secondary;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    fill: $special-color-secondary;
+  }
+  &--newsletter {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin-top: 35.97px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 42px;
+    padding-right: 28px;
+  }
+  &--modal {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  &--filter {
+    font-weight: $font-weight-m;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: $buttons-color;
+    color: $font-color-primary;
+    padding: 6px 22px;
+    box-shadow: none;
+    transition-duration: $transit-duration-primary;
+    transition-timing-function: $transit-function-primary;
+    transition-property: color, background-color, box-shadow;
+    &:focus,
+    &:hover {
+      color: $color-white;
+      background-color: $special-color-primary;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+  &--active {
+    color: $color-white;
+    background-color: $special-color-primary;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

@@ -1,0 +1,16 @@
+.footer {
+  background-color: $bg-color-primary;
+  display: flex;
+  &__primary-list {
+    align-items: normal;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 70px;
+  }
+  &__secondary-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

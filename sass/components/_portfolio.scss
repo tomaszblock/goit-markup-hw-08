@@ -1,0 +1,15 @@
+.portfolio {
+  flex-direction: column;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  gap: 50px;
+  &__filter {
+    display: flex;
+    gap: 8px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

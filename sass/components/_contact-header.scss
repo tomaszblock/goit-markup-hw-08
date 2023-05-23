@@ -1,0 +1,28 @@
+.contact {
+  font-weight: $font-weight-m;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  color: $font-color-secondary;
+
+  &__header {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    transition-timing-function: $transit-function-primary;
+    transition-property: color, fill;
+    transition-duration: $transit-duration-primary;
+    gap: 10px;
+    &:focus,
+    &:hover {
+      color: $special-color-primary;
+      fill: $special-color-primary;
+    }
+  }
+}

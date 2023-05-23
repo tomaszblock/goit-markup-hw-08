@@ -1,0 +1,21 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $color-white;
+  & a {
+    color: $color-white-alpha;
+    transition-timing-function: $transit-function-primary;
+    transition-property: color, fill;
+    transition-duration: $transit-duration-primary;
+    &:focus,
+    &:hover {
+      color: $special-color-primary;
+      fill: $special-color-primary;
+    }
+  }
+}

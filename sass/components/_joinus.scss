@@ -1,0 +1,13 @@
+.joinus {
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: $font-weight-l;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-white;
+}

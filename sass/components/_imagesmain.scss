@@ -1,0 +1,20 @@
+.imagemain {
+  position: relative;
+  height: 293px;
+  font-weight: $font-weight-l;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 70px;
+    width: 370px;
+    bottom: 0;
+    background: $font-color-image-name;
+    color: $color-white;
+  }
+}

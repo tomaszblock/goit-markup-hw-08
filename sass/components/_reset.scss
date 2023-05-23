@@ -1,0 +1,27 @@
+body,
+body a {
+  font-family: $family-primary;
+  color: $font-color-primary;
+}
+a {
+  text-decoration: none;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+::placeholder {
+  color: $font-color-secondary-alpha;
+}
+ul {
+  list-style-type: none;
+}

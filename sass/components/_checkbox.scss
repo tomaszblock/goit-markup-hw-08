@@ -1,0 +1,49 @@
+.checkbox {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $font-color-secondary;
+  gap: 8px;
+  &__input {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    &:checked + .checkbox__label .checkbox__border {
+      fill: $color-white;
+      opacity: 1;
+    }
+    &:checked + .checkbox__label .checkbox__check {
+      fill: $special-color-primary;
+      background-color: $special-color-primary;
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__border {
+    position: absolute;
+    left: 3px;
+    opacity: 0;
+    transition-timing-function: $transit-function-primary;
+    transition-property: opacity;
+    transition-duration: $transit-duration-primary;
+  }
+  &__check {
+    border-radius: 2px;
+    transition-timing-function: $transit-function-primary;
+    transition-property: fill, background-color;
+    transition-duration: $transit-duration-primary;
+  }
+  & a {
+    color: $special-color-primary;
+    text-decoration: underline;
+  }
+  &--modal {
+    padding-top: 10px;
+  }
+}

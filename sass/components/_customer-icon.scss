@@ -1,0 +1,21 @@
+.customer {
+  display: inline-block;
+  padding: 16px 32px;
+  border: 1px solid $icons-primary-color;
+  border-radius: 4px;
+  fill: $icons-primary-color;
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $special-color-primary;
+  }
+  & svg {
+    transition-timing-function: $transit-function-primary;
+    transition-property: fill, border;
+    transition-duration: $transit-duration-primary;
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: $special-color-primary;
+  }
+}
