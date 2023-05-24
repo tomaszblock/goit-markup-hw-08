@@ -5,11 +5,18 @@
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-  color: $font-color-secondary;
-
-  &__header {
+  display: flex;
+  gap: 30px;
+  @media (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @media (max-width: 767px) {
+    display: none;
   }
 
   &__link {
@@ -19,6 +26,7 @@
     transition-property: color, fill;
     transition-duration: $transit-duration-primary;
     gap: 10px;
+    color: $font-color-secondary;
     &:focus,
     &:hover {
       color: $special-color-primary;
