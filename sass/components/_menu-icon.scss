@@ -1,0 +1,19 @@
+.menu-icon {
+  border: none;
+  background-color: $color-white;
+  cursor: pointer;
+  transition-timing-function: $transit-function-primary;
+  transition-property: fill;
+  border-radius: 50%;
+  transition-duration: $transit-duration-primary;
+  @media (min-width: 769px) {
+    display: none;
+  }
+  &:focus,
+  &:hover {
+    fill: $special-color-primary;
+  }
+  &--svg {
+    display: flex;
+  }
+}
