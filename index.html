@@ -528,14 +528,65 @@
     </footer>
     <script src="./js/modal.js"></script> -->
     <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">dupa</button>
-
-      <ul>
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <button class="mobile-menu__close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav">
+        <li><a href="./index.html" class="link">Agencja</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Kontakt</a></li>
       </ul>
+      <div class="mobile-menu__contact">
+        <ul class="contact contact--mobile">
+          <li>
+            <a
+              class="contact__link contact__link--mobiletel"
+              href="tel:+48111111111"
+            >
+              +48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a
+              class="contact__link contact__link--mobileemail"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="media">
+          <li>
+            <a
+              class="media__items--position media__items"
+              href="/instagram"
+              class="link"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="media__items media__items--decoration"
+              href="/Twitter"
+              class="link"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="media__items media__items--decoration"
+              href="/Facebook"
+              class="link"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a class="media__items" href="/LinkedIn" class="link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script
       defer

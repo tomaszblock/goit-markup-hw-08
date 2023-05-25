@@ -31,6 +31,24 @@
     &:hover {
       color: $special-color-primary;
       fill: $special-color-primary;
+      text-decoration: underline solid $special-color-primary 0.1rem;
+    }
+    &--mobiletel {
+      font-size: 34px;
+      line-height: 1.18;
+      color: $special-color-primary;
+    }
+    &--mobileemail {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  }
+  &--mobile {
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 32px;
     }
   }
 }
