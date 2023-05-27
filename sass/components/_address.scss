@@ -17,5 +17,13 @@
       color: $special-color-primary;
       fill: $special-color-primary;
     }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+      display: flex;
+    }
+    @media (max-width: 767px) {
+      justify-content: center;
+      display: flex;
+    }
   }
 }

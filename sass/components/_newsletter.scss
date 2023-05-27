@@ -1,6 +1,16 @@
 .newsletter {
   display: flex;
   gap: 12px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
   &--position {
     margin-left: 8px;
     margin-top: 12px;
@@ -14,9 +24,16 @@
     color: $color-white;
     display: flex;
     flex-direction: column;
-    width: 387px;
+
     gap: 20px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      place-items: center;
+    }
+    @media (max-width: 767px) {
+      place-items: center;
+    }
     & input {
+      width: 358px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
