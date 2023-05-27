@@ -15,13 +15,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 528px;
+    max-width: 528px;
+    width: 100%;
     height: 581px;
     background-color: $color-white;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 40px;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      max-width: 450px;
+      height: 609px;
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      max-width: 450px;
+      height: 609px;
+      width: 100%;
+    }
   }
   &__close {
     display: flex;

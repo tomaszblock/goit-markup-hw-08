@@ -8,6 +8,16 @@
   letter-spacing: 0.03em;
   color: $font-color-secondary;
   gap: 8px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+    gap: 6px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.17;
+    gap: 6px;
+  }
   &__input {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
