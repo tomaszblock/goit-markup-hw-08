@@ -4,15 +4,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   display: flex;
-  //   & li a {
-  //     color: $special-color-primary;
-  //     padding-left: 10px;
-  //     padding-right: 10px;
-  //     &:focus,
-  //     &:hover {
-  //       text-decoration: underline solid $special-color-primary 0.1rem;
-  //     }
-  //   }
+  flex-wrap: wrap;
   &__items {
     color: $special-color-primary;
     padding-left: 10px;

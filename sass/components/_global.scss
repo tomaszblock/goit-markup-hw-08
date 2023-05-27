@@ -28,3 +28,8 @@
   visibility: hidden;
   opacity: 0;
 }
+.tablet {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+  }
+}
