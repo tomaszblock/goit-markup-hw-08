@@ -6,7 +6,7 @@
   transition-property: fill;
   border-radius: 50%;
   transition-duration: $transit-duration-primary;
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: none;
   }
   &:focus,

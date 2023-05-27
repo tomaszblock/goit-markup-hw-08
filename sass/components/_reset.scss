@@ -1,18 +1,15 @@
 main {
-  @media (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    justify-content: center;
-  }
-  @media (max-width: 767px) {
-    display: flex;
-    justify-content: center;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body,
 body a {
   font-family: $family-primary;
