@@ -2,12 +2,34 @@
   padding-top: 94px;
   padding-bottom: 94px;
   flex-direction: column;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   &__post {
     flex-direction: column;
     gap: 50px;
+    display: flex;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      gap: 30px;
+    }
+    @media (max-width: 767px) {
+      gap: 30px;
+    }
   }
   &__items {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
 }
