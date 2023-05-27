@@ -2,6 +2,13 @@
   flex-direction: column;
   gap: 50px;
   padding-bottom: 94px;
+  padding-top: 94px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    display: none;
+  }
   &__post {
     display: flex;
     gap: 30px;

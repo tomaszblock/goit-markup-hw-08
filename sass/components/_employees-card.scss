@@ -3,8 +3,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $color-white;
-  width: 270px;
-  height: 428px;
+  padding-bottom: 30px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 24px;
+  }
   &__items {
     display: flex;
     flex-direction: column;
