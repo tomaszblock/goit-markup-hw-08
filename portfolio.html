@@ -17,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container container--header header__list">
         <a class="logo header__logo" href="./index.html" title="WebStudio"
           ><span class="logo--special">Web</span>Studio</a
         >
@@ -34,7 +34,7 @@
             <li><a class="nav__link" href="/Kontakt">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact contact__header">
+        <ul class="contact">
           <li>
             <a class="contact__link" href="mailto:info@devstudio.com">
               <svg width="16" height="12">
@@ -52,6 +52,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-icon js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon--svg" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="section">
@@ -90,14 +99,28 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project1.jpg"
-                width="370"
-                height="294"
-                alt="Strona internetowa wyświetlana na laptopie"
-              />
+              <picture>
+                <source
+                  srcset="images/project1.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project1.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project1.jpg"
+                  alt="Strona internetowa wyświetlana na laptopie"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
-            <div class="product__card">
+            <div class="product__card product__card--device">
               <p class="product__card--bold">Technocrack</p>
               <p>Strona internetowa</p>
             </div>
@@ -112,14 +135,28 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project2.jpg"
-                width="370"
-                height="294"
-                alt="dwóch koszykarzy walczących o piłkę w powietrzu"
-              />
+              <picture>
+                <source
+                  srcset="images/project2.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project2.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project2.jpg"
+                  alt="dwóch koszykarzy walczących o piłkę w powietrzu"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
-            <div class="product__card">
+            <div class="product__card product__card--device">
               <p class="product__card--bold">
                 Grafika New Orlean vs Golden Star
               </p>
@@ -136,12 +173,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project3.jpg"
-                width="370"
-                height="294"
-                alt="Logo restauracji - napis The Seafood Restaurant na tle ryby"
-              />
+              <picture>
+                <source
+                  srcset="images/project3.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project3.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project3.jpg"
+                  alt="Logo restauracji - napis The Seafood Restaurant na tle ryby"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Restauracja Seafood</p>
@@ -158,12 +209,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project4.jpg"
-                width="370"
-                height="294"
-                alt="Słuchawki"
-              />
+              <picture>
+                <source
+                  srcset="images/project4.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project4.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project4.jpg"
+                  alt="Słuchawki"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Projekt Prime</p>
@@ -180,12 +245,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project5.jpg"
-                width="370"
-                height="294"
-                alt="dwie kartonowe paczki"
-              />
+              <picture>
+                <source
+                  srcset="images/project5.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project5.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project5.jpg"
+                  alt="dwie kartonowe paczki"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Projekt Boxes</p>
@@ -202,12 +281,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project6.jpg"
-                width="370"
-                height="294"
-                alt="Strona internetowa wyświetlana na monitorze"
-              />
+              <picture>
+                <source
+                  srcset="images/project6.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project6.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project6.jpg"
+                  alt="Strona internetowa wyświetlana na monitorze"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Inspiration has no Borders</p>
@@ -224,12 +317,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project7.jpg"
-                width="370"
-                height="294"
-                alt="Magazyn - książka - z nagłówkiem I'am Limited Edition"
-              />
+              <picture>
+                <source
+                  srcset="images/project7.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project7.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project7.jpg"
+                  alt="Magazyn - książka - z nagłówkiem I'am Limited Edition"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Magazyn Limited Edition</p>
@@ -246,12 +353,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project8.jpg"
-                width="370"
-                height="294"
-                alt="TAG z nadrukiem LABEL TAG"
-              />
+              <picture>
+                <source
+                  srcset="images/project8.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project8.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project8.jpg"
+                  alt="TAG z nadrukiem LABEL TAG"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Projekt LAB</p>
@@ -268,12 +389,26 @@
                   serwery konkurencji
                 </p>
               </div>
-              <img
-                src="images/project9.jpg"
-                width="370"
-                height="294"
-                alt="Aplikacja Growing Business wyświetlana na laptopie"
-              />
+              <picture>
+                <source
+                  srcset="images/project9.jpg"
+                  media="(max-width: 767px)"
+                  width="450"
+                  height="294"
+                />
+                <source
+                  srcset="images/project9.jpg"
+                  media="(max-width: 1199px)"
+                  width="354"
+                  height="294"
+                />
+                <img
+                  src="images/project9.jpg"
+                  alt="Aplikacja Growing Business wyświetlana na laptopie"
+                  width="370"
+                  height="294"
+                />
+              </picture>
             </div>
             <div class="product__card">
               <p class="product__card--bold">Growing Business</p>
@@ -300,7 +435,7 @@
           </address>
         </div>
         <div class="joinus">
-          <span class="footer-title">DOŁĄCZ DO NAS</span>
+          <span class="joinus__title">DOŁĄCZ DO NAS</span>
           <ul class="icons">
             <li>
               <a
